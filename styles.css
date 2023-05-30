@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Logo.png');
+    background-size: 100% 100%; /* Ajustar la imagen de fondo al tamaño completo del cuerpo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent; /* Cambiar el color de fondo a transparente */
+    color: white; /* Cambiar el color del texto a blanco */
+}
+
+header {
+    background-color: transparent; /* Fondo transparente para el encabezado */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centrar las opciones del menú */
+}
+
+nav ul li {
+    display: inline-block; /* Mostrar las opciones en línea */
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Cambiar el color del texto a blanco */
+}
+
+#banner {
+    background-color: transparent; /* Fondo transparente para el banner */
+    text-align: center;
+    padding: 50px;
+}
+
+#contenido {
+    padding: 20px;
+    background-color: rgba(27, 74, 246, 0.8); /* Fondo azul semi-transparente */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en filas */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.image {
+    flex-basis: calc((100% - 40px) / 3); /* Aumentar el tamaño de las imágenes para que ocupen el ancho de la página con separación entre ellas */
+    height: auto;
+    transition: transform 0.3s; /* Agregar transición para el efecto de escala */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.video {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video h3 {
+    margin-top: 10px;
+}
+
+.video iframe {
+    width: 100%;
+    height: auto;
+    max-width: 560px;
+    max-height: 315px;
+    transition: transform 0.3s; /* Agregar transición para el efecto de escala */
+}
+
+.image:hover img,
+.video:hover iframe {
+    transform: scale(1.2); /* Hacer que las imágenes y los videos se hagan grandes al pasar el mouse sobre ellos */
+}
+
+#promociones {
+    float: right; /* Alinear a la derecha */
+    width: 50%; /* Ancho del contenedor de promociones */
+    margin-left: 20px; /* Margen izquierdo para separar del contenido principal */
+}
+
+#contacto {
+    float: right; /* Alinear a la derecha */
+    width: 50%; /* Ancho del contenedor de contacto */
+    margin-left: 20px; /* Margen izquierdo para separar del contenido principal */
+}
+
+#volver-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #F72D2D;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
